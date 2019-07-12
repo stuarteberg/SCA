@@ -10,7 +10,7 @@ def construct_chain(n, weight):
     for i in range(n):
         for j in range(n):
             if i == j+1:
-                A[i,j] = 1 + weight*np.exp(np.sqrt(i/.5))
+                A[i,j] = 1 + weight*np.exp(-(i/.5)**2)
     A -= np.eye(n)
     return A
 
