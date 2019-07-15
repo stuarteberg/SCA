@@ -1,0 +1,22 @@
+EXCLUDE_QUERY_DIR
+B /Users/virginiarutten/.opam/default/lib/bytes
+B /Users/virginiarutten/.opam/default/lib/cmdargs
+B /Users/virginiarutten/.opam/default/lib/ctypes
+B /Users/virginiarutten/.opam/default/lib/eigen
+B /Users/virginiarutten/.opam/default/lib/eigen/cpp
+B /Users/virginiarutten/.opam/default/lib/integers
+B /Users/virginiarutten/.opam/default/lib/owl
+B /Users/virginiarutten/.opam/default/lib/owl-base
+B /usr/local/lib/ocaml
+B _build/default/.toy_data.eobjs/byte
+S /Users/virginiarutten/.opam/default/lib/bytes
+S /Users/virginiarutten/.opam/default/lib/cmdargs
+S /Users/virginiarutten/.opam/default/lib/ctypes
+S /Users/virginiarutten/.opam/default/lib/eigen
+S /Users/virginiarutten/.opam/default/lib/eigen/cpp
+S /Users/virginiarutten/.opam/default/lib/integers
+S /Users/virginiarutten/.opam/default/lib/owl
+S /Users/virginiarutten/.opam/default/lib/owl-base
+S /usr/local/lib/ocaml
+S .
+FLG -w @a-4-29-40-41-42-44-45-48-58-59-60-40 -strict-sequence -strict-formats -short-paths -keep-locs
