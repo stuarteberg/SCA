@@ -1,7 +1,10 @@
 open Owl
 
+
 let dir = Cmdargs.(get_string "-d" |> force ~usage:"-d [dir]")
 let in_dir = Printf.sprintf "%s/%s" dir
+
+
 
 (* some parameters *)
 let k = 500 (* number of trials *)
@@ -109,7 +112,11 @@ let simulate () =
   in
   Arr.get_fancy [ L ids ] data
 
+(* create an hdf5 file handle *)
+let h5 = Data.h5 "/Users/virginiarutten/Desktop/SCA/results/toy_data.h5"
 
 let () =
   let data = simulate () in
-  Arr.save data (in_dir "toy_data.bin")
+  (* Arr.save data (in_dir "toy_data.bin") *)
+  (* save data in that file *)
+  Data.Arr.save ~h5 "data/X" data
